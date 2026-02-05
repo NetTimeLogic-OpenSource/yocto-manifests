@@ -30,4 +30,6 @@
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-system-controller"   path="sources/meta-system-controller"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-vitis"               path="sources/meta-vitis"/>
   <project remote="xilinx"    revision="rel-v2023.2"      name="meta-rauc"                path="sources/meta-rauc"/>
+
+  <project remote="rust-embedded"  revision="master"      name="meta-rust-bin"            path="sources/meta-rust-bin"/>
 </manifest>
