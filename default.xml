@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
+  <remote name="rust-embedded"  fetch="https://github.com/rust-embedded"/>
 
   <default sync-j="4"/>
 
