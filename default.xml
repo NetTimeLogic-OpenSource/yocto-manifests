@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
-  <remote name="rust-embedded"  fetch="https://github.com/rust-embedded"/>
+  <remote name="ntl"     fetch="https://github.com/NetTimeLogic-OpenSource"/>
+  <remote name="ruste"   fetch="https://github.com/rust-embedded"/>
 
   <default sync-j="8"/>
 
   <project remote="xilinx"  revision="rel-v2025.2"      name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="setupsdk" src="setupsdk"/>
   </project>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="yocto-manifests"          path="sources/manifest"/>
+  <project remote="ntl"       revision="rel-v2025.2"      name="yocto-manifests"          path="sources/manifest"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-arm"                 path="sources/meta-arm"/>
@@ -27,5 +28,5 @@
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-rauc"                path="sources/meta-rauc"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-system-controller"   path="sources/meta-system-controller"/>
 
-  <project remote="rust-embedded"  revision="master"      name="meta-rust-bin"            path="sources/meta-rust-bin"/>
+  <project remote="ruste"     revision="master"           name="meta-rust-bin"            path="sources/meta-rust-bin"/>
 </manifest>
