@@ -17,7 +17,6 @@
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-kria"                path="sources/meta-kria"/>
 
   <project remote="xilinx"    revision="rel-v2025.2"      name="poky"                     path="sources/poky"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-mingw"               path="sources/meta-mingw"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-virtualization"      path="sources/meta-virtualization"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-security"            path="sources/meta-security"/>
 
@@ -27,7 +26,6 @@
 
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-qt5"                 path="sources/meta-qt5"/>
   <project remote="xilinx"    revision="rel-v2025.2"      name="meta-rauc"                path="sources/meta-rauc"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-system-controller"   path="sources/meta-system-controller"/>
 
   <project remote="ruste"     revision="master"           name="meta-rust-bin"            path="sources/meta-rust-bin"/>
 </manifest>
