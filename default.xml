@@ -6,26 +6,23 @@
 
   <default sync-j="8"/>
 
-  <project remote="xilinx"  revision="rel-v2025.2"      name="yocto-scripts"            path="sources/yocto-scripts">
+  <project remote="xilinx"  revision="rel-v2026.1"      name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="setupsdk" src="setupsdk"/>
   </project>
-  <project remote="ntl"       revision="rel-v2025.2"      name="yocto-manifests"          path="sources/manifest"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-arm"                 path="sources/meta-arm"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-petalinux"           path="sources/meta-petalinux"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-kria"                path="sources/meta-kria"/>
+  <project remote="ntl"       revision="ntl-v2026.1"      name="yocto-manifests"          path="sources/manifest"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-arm"                 path="sources/meta-arm"/>
+  <project remote="ntl"       revision="master"           name="meta-aionyx"              path="sources/meta-aionyx"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-kria"                path="sources/meta-kria"/>
 
-  <project remote="xilinx"    revision="rel-v2025.2"      name="poky"                     path="sources/poky"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-virtualization"      path="sources/meta-virtualization"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-security"            path="sources/meta-security"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="poky"                     path="sources/poky"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-virtualization"      path="sources/meta-virtualization"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-security"            path="sources/meta-security"/>
 
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-openembedded"        path="sources/meta-openembedded"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-openembedded"        path="sources/meta-openembedded"/>
 
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-openamp"             path="sources/meta-openamp"/>
-
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-qt5"                 path="sources/meta-qt5"/>
-  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-rauc"                path="sources/meta-rauc"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-rauc"                path="sources/meta-rauc"/>
 
   <project remote="ruste"     revision="master"           name="meta-rust-bin"            path="sources/meta-rust-bin"/>
 </manifest>
