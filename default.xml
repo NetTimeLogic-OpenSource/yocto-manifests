@@ -6,7 +6,7 @@
 
   <default sync-j="8"/>
 
-  <project remote="xilinx"  revision="rel-v2026.1"      name="yocto-scripts"            path="sources/yocto-scripts">
+  <project remote="ntl"       revision="master"           name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="setupsdk" src="setupsdk"/>
   </project>
   <project remote="ntl"       revision="ntl-v2026.1"      name="yocto-manifests"          path="sources/manifest"/>
