@@ -12,6 +12,7 @@
   </project>
   <project remote="xilinx"    revision="rel-v2026.1"      name="poky"                     path="sources/poky"/>
   <project remote="xilinx"    revision="rel-v2026.1"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
+  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-xilinx-tools"        path="sources/meta-xilinx-tools"/>
   <project remote="xilinx"    revision="rel-v2026.1"      name="meta-virtualization"      path="sources/meta-virtualization"/>
   <project remote="xilinx"    revision="rel-v2026.1"      name="meta-openembedded"        path="sources/meta-openembedded"/>
 
