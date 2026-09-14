@@ -3,7 +3,7 @@
   <remote name="xilinx" fetch="https://github.com/Xilinx"/>
   <remote name="ntl"    fetch="https://github.com/NetTimeLogic-OpenSource"/>
   <remote name="re"     fetch="https://github.com/rust-embedded"/>
-  <remote name="locals" fetch="/custom_sources" />
+  <remote name="locals" fetch="file:///custom_sources" />
 
   <default sync-j="8"/>
 
