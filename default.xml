@@ -3,6 +3,7 @@
   <remote name="xilinx" fetch="https://github.com/Xilinx"/>
   <remote name="ntl"    fetch="https://github.com/NetTimeLogic-OpenSource"/>
   <remote name="re"     fetch="https://github.com/rust-embedded"/>
+  <remote name="rauc"   fetch="https://github.com/rauc"/>
   <remote name="locals" fetch="file:///custom_sources" />
 
   <default sync-j="8"/>
@@ -10,19 +11,20 @@
   <project remote="ntl"       revision="master"           name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="edf-init-build-env" src="edf-init-build-env"/>
   </project>
-  <project remote="xilinx"    revision="rel-v2026.1"      name="poky"                     path="sources/poky"/>
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-virtualization"      path="sources/meta-virtualization"/>
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-openembedded"        path="sources/meta-openembedded"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="openembedded-core"        path="sources/openembedded-core"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="bitbake"                  path="sources/openembedded-core/bitbake"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-yocto"               path="sources/meta-yocto"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-virtualization"      path="sources/meta-virtualization"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-openembedded"        path="sources/meta-openembedded"/>
 
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-arm"                 path="sources/meta-arm"/>
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-kria"                path="sources/meta-kria"/>
-  <project remote="ntl"       revision="ntl-v2026.1"      name="meta-aionyx"              path="sources/meta-aionyx"/>
-  <project remote="locals"    revision="ntl-v2026.1"      name="meta-aionyx-hive"         path="sources/meta-aionyx-hive"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-arm"                 path="sources/meta-arm"/>
+  <project remote="ntl"       revision="ntl-v2026.2"      name="meta-aionyx"              path="sources/meta-aionyx"/>
+  <project remote="locals"    revision="ntl-v2026.2"      name="meta-aionyx-hive"         path="sources/meta-aionyx-hive"/>
 
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-security"            path="sources/meta-security"/>
+  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-security"            path="sources/meta-security"/>
 
-  <project remote="xilinx"    revision="rel-v2026.1"      name="meta-rauc"                path="sources/meta-rauc"/>
+  <project remote="rauc"      revision="wrynose"          name="meta-rauc"                path="sources/meta-rauc"/>
 
   <project remote="re"        revision="master"           name="meta-rust-bin"            path="sources/meta-rust-bin"/>
 </manifest>
