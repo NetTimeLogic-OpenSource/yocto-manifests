@@ -15,14 +15,11 @@
   <project remote="xilinx"    revision="rel-v2026.2"      name="bitbake"                  path="sources/openembedded-core/bitbake"/>
   <project remote="xilinx"    revision="rel-v2026.2"      name="meta-yocto"               path="sources/meta-yocto"/>
   <project remote="xilinx"    revision="rel-v2026.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
-  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-virtualization"      path="sources/meta-virtualization"/>
   <project remote="xilinx"    revision="rel-v2026.2"      name="meta-openembedded"        path="sources/meta-openembedded"/>
 
   <project remote="xilinx"    revision="rel-v2026.2"      name="meta-arm"                 path="sources/meta-arm"/>
   <project remote="ntl"       revision="ntl-v2026.2"      name="meta-aionyx"              path="sources/meta-aionyx"/>
   <project remote="locals"    revision="ntl-v2026.2"      name="meta-aionyx-hive"         path="sources/meta-aionyx-hive"/>
-
-  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-security"            path="sources/meta-security"/>
 
   <project remote="rauc"      revision="wrynose"          name="meta-rauc"                path="sources/meta-rauc"/>
 
