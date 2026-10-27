@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="oe"     fetch="https://github.com/openembedded"/>
+  <remote name="yocto"  fetch="https://git.yoctoproject.org"/>
   <remote name="xilinx" fetch="https://github.com/Xilinx"/>
   <remote name="ntl"    fetch="https://github.com/NetTimeLogic-OpenSource"/>
   <remote name="re"     fetch="https://github.com/rust-embedded"/>
@@ -11,13 +13,13 @@
   <project remote="ntl"       revision="master"           name="yocto-scripts"            path="sources/yocto-scripts">
        <copyfile dest="edf-init-build-env" src="edf-init-build-env"/>
   </project>
-  <project remote="xilinx"    revision="rel-v2026.2"      name="openembedded-core"        path="sources/openembedded-core"/>
-  <project remote="xilinx"    revision="rel-v2026.2"      name="bitbake"                  path="sources/openembedded-core/bitbake"/>
-  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-yocto"               path="sources/meta-yocto"/>
+  <project remote="oe"        revision="884a91e689d545238cfabd7926c93663950ca286" upstream="wrynose" name="openembedded-core" path="sources/openembedded-core"/>
+  <project remote="oe"        revision="6e260eb6ab1631607ea414d9ff8ede1155faa5d9" upstream="2.18"    name="bitbake"           path="sources/openembedded-core/bitbake"/>
+  <project remote="yocto"     revision="7c25b11156553145fa6b241a2d4f65d94438f804" upstream="wrynose" name="meta-yocto"        path="sources/meta-yocto"/>
   <project remote="xilinx"    revision="rel-v2026.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
-  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-openembedded"        path="sources/meta-openembedded"/>
+  <project remote="oe"        revision="f28a144aa0a0ae05ca2ee91e1aef6aa05f6a12db" upstream="wrynose" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="xilinx"    revision="rel-v2026.2"      name="meta-arm"                 path="sources/meta-arm"/>
+  <project remote="yocto"     revision="673e8d7c5dcd14de58092eb73e6ecc5eee5c1735" upstream="wrynose" name="meta-arm"          path="sources/meta-arm"/>
   <project remote="ntl"       revision="ntl-v2026.2"      name="meta-aionyx"              path="sources/meta-aionyx"/>
   <project remote="locals"    revision="ntl-v2026.2"      name="meta-aionyx-hive"         path="sources/meta-aionyx-hive"/>
 
